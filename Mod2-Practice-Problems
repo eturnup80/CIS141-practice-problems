@@ -1,0 +1,47 @@
+# 1. Create a program that prints the following output to the screen: "Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony. Then, everything changed when the Fire Nation attacked."
+print("Water. Earth. Fire. Air. Long ago, the four nations lived together in harmony. Then, everything changed when the Fire Nation attacked.")
+# 2. Create a program that prompts for 2 numbers and then outputs the addition, subtraction, multiplication, and division of the first number by the second number.
+first = int(input("Please provide a number and then hit Enter."))
+second = int(input("Please provide ANOTHER number and then hit Enter."))
+print("Congratulations! You did it.")
+print(first+second,"<--- This is the first number added to the second number.")
+print(first-second, "<--- This is the first number minus the second number.")
+print(first*second, "<--- This is the first number multiplied by the second number.")
+print(first/second, "<--- This is the first number divided by the second number.")
+# 3. Create a program that prompts for the side lengths of a triangle and computes the area using Heron's formula. (https://en.wikipedia.org/wiki/Heron%27s_formula)
+#   s = (a+b+c)/2
+#   t = sqrt[s(s-a)(s-b)(s-c)]
+import math
+print("Hello. I'm collecting information about triangles. Have you seen one recently?... You have?! Great!")
+aaa = int(input("How many inches long was the first side of the triangle?"))
+bbb = int(input("And the second side?"))
+ccc = int(input("What about the third side?"))
+
+sss = (aaa+bbb+ccc)/2
+#print(sss)
+ttt = math.sqrt(sss*(sss-aaa)*(sss-bbb)*(sss-ccc))
+#print(ttt)
+
+print("Did you know that the area of the triangle that you just described is in fact:")
+print(ttt)
+# 4. Create a program that computes different statistics given five numbers including the total, average, minimum, maximum, range, and standard deviation (https://en.wikipedia.org/wiki/Standard_deviation).
+
+a = int(input("Hello. I am a number collector. Please give me a number and then hit Enter on your keyboard:"))
+#print(a)
+b = int(input("Wonderful. Please give me another number:"))
+#print(b)
+c = int(input("That should be all of the numbers that I need... Just kidding. Give me another number. RIGHT NOW:"))
+#print(c)
+d = int(input("Okay, I'm done being patient. Enter another number:"))
+#print(d)
+e = int(input("This is your last chance. Give me the best number you got and nobody gets hurt."))
+#print(e)
+
+print("Was that SO hard?... Wanna hear some fun facts now?")
+total = int((a+b+c+d+e))
+print("The sum of the numbers that you provided is in fact:",total)
+average = int((a+b+c+d+e)/5)
+print("The average of the numbers that you provided is in fact:",average)
+minimum = 
+maximum =
+std = 
