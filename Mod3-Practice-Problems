@@ -1,0 +1,23 @@
+# 1. Prompt the user for a word. Then, prompt the user for how many times they'd like that word repeated. Use the skills you learned in this module to print the word the correct number of times.
+word = input("What is your favorite sports team name?")
+cheer = int(input("How many times would you like to cheer for your favorite team?"))
+print(("Go " + word +"! ")*cheer)
+#2. Prompt the user for their name and their age. Calculate their age next year. Use string concatenation to print "Hello, <name>! You are <age1> years old. Next year, you will be <age2> years old."
+name = input("What is your name?")
+age = int(input("What is your age?"))
+next_year = (age + 1)
+print("Hello,",name,"!", "You are",age,"years old. Next year, you will be",next_year,"years old.")
+#3. Prompt the user for a sentence and a word to try to find in that sentence. Have the program print out whether the word was found in the sentence. (i.e. True or False)
+sentence = input("Please provide your favorite sentence ever.")
+word = input("Would you like to search your sentence for a certain word?... You would?! Great! What single word would you like to search for in your sentence?")
+result = (word in sentence)
+print("It is in fact",result,"that the exact word you wanted to search for is contained within the sentence that you provided.")
+#4. Prompt the user for: a word, a first index, and a last index. Slice the word at the indexes provided by the user and print to the screen.
+word = input("What is your favorite word?")
+first = int(input("Please provide a 'first index' that I can practice my programming with."))
+second = int(input("Great, thank you! Now please provide a 'second index' that I can practice my programming with."))
+print(word[first:second])
+#5. Print 3 words with a | character (called a pipe) in between them. Use the appropriate keyword argument in print() to do so.
+phrase1 = "Go Seattle Seahawks!"
+phrase2 = phrase1.split(" ")
+print("|".join(phrase2))
